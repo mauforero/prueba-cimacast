@@ -1,0 +1,11 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+exercise2:
+    pattern: /exercise2/
+    defaults: { _controller: AppBundle:Exercise2:printTable }
+    requirements: { _method: GET }
